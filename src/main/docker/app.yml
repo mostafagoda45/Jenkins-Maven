@@ -1,0 +1,15 @@
+version: '2'
+services:
+    jenkins_maven-app:
+        image: jenkins_maven
+        environment:
+            # - _JAVA_OPTIONS=-Xmx512m -Xms256m
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:sqlserver://jenkins_maven-mssql:1433;database=Jenkins_maven
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+        ports:
+            - 8080:8080
+    jenkins_maven-mssql:
+        extends:
+            file: mssql.yml
+            service: jenkins_maven-mssql
