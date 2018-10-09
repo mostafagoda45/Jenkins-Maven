@@ -29,7 +29,7 @@ spring:
         type: com.zaxxer.hikari.HikariDataSource
         url: jdbc:sqlserver://localhost:1433;database=Jenkins_maven
         username: SA
-        password: yourStrong(!)Password
+        password: Cloud9ers
         hikari:
             auto-commit: false
             data-source-properties:
