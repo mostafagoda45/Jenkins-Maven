@@ -4,7 +4,7 @@
 
     <groupId>com.mycompany.myapp</groupId>
     <artifactId>jenkins-maven</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>Deploy</version>
     <packaging>war</packaging>
     <name>Jenkins Maven</name>
 
